@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adminstration</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body {
+        font-family: "Baloo Bhai 2 script=latin rev=1";
+        margin: 0px;
+        padding: 0px;
+        background: url("bg.jpg");
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 5px solid rgb(36, 230, 36); */
+        position: absolute;
+        left: 45px;
+        top: 22px;
+    }
+
+    .left img {
+        padding: 150px 40px;
+        width: 150px;
+        /* background-color: rgba(128, 128, 128, 0.575); */
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 54%;
+        margin: 20px auto;
+        /* border: 4px solid red; */
+    }
+
+    .right {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        width: 220px;
+        display: flex;
+      
+    }
+
+    .navbar {
+        position: relative;
+        display: inline-block;
+    }
+
+    
+
+    .navbar li {
+        font-size: 25px;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        background-color: black;
+        color: rgb(252, 6, 47);
+        text-decoration: none;
+        padding: 10px 23px;
+        border-radius: 10px;
+
+    }
+
+    .navbar li a:hover,
+    navbar li a.active {
+        text-decoration: underline;
+        color: white;
+    }
+
+    .btn {
+        margin: 7px 9px;
+        background-color: tomato;
+        color: white;
+        padding: 5px 10px;
+        border: 2px solid palevioletred;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: yellowgreen;
+        text-decoration: underline;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 550px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    #home h1{
+        color: black;
+        text-align: center;
+        font-family: cursive;
+        font-size: 30px;
+        padding: 20px 32px;
+        background-color: gray;
+        opacity: 0.95;
+        border: 20px solid purple;
+        width: 360px;
+        height: 20px;
+
+     
+    }
+
+   
+
+    .h-primary{
+        font-size: 40px;
+        padding: 12px;
+       
+    }
+
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="sgi.png" alt="">
+               
+
+           
+
+        </div>
+        <!-- mid box for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About </a></li>
+
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <form action="admin.html">
+            <button class="btn">
+                Admin
+            </button>
+        </form>
+
+        <form action="email.html">
+            <button class="btn">
+                Email Us
+            </button>
+        </form>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1 id="h-primary">Welcome to SGI Group</h1>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste deleniti amet, enim quae consequuntur suscipit nulla illo repudiandae deserunt.</p> -->
+    </section>
+
+</body>
+
+</html>
